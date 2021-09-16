@@ -70,7 +70,7 @@
                     android:layout_below="@+id/img_mainImg"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="Name :"
+                    android:text="Club Name :"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -90,7 +90,7 @@
                     android:layout_below="@+id/tv_Name_desc"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="Country :"
+                    android:text="Club Country :"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
 
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="Desc :"
+                    android:text="Description :"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
