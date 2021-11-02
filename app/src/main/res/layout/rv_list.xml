@@ -3,22 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="5dp"
-    app:cardElevation="2dp"
+    android:elevation="3dp"
+    app:cardElevation="4dp"
     app:cardUseCompatPadding="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:id="@+id/rv_layout_list"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="wrap_content"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/img_list"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp" />
 
@@ -27,16 +28,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_toRightOf="@id/img_list"
             android:layout_toEndOf="@id/img_list" />
 
         <TextView
-            android:id="@+id/tv_desc_list"
+            android:id="@+id/tv_country_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Desc"
+            android:text="Country"
+            android:textColor="@color/black"
             android:ellipsize="end"
-            android:maxLines="3"
+            android:maxLines="2"
             android:layout_toRightOf="@id/img_list"
             android:layout_toEndOf="@id/img_list"
             android:layout_below="@id/tv_title_list" />

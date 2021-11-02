@@ -40,7 +40,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ListViewHolder
         final TeamModel model = dataList.get(position);
 
         holder.tv_name.setText(model.getTeamName());
-        holder.tv_desc.setText(model.getTeamDesc());
+        holder.tv_country.setText(model.getTeamCountry());
         Picasso.get()
                 .load(dataList.get(position).getTeamBadge())
                 .placeholder(R.mipmap.ic_launcher)
@@ -68,13 +68,13 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ListViewHolder
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
-        private TextView tv_name, tv_desc;
+        private TextView tv_name, tv_country;
         private ImageView img_list;
 
         public ListViewHolder(View itemView) {
             super(itemView);
             tv_name = itemView.findViewById(R.id.tv_title_list);
-            tv_desc = itemView.findViewById(R.id.tv_desc_list);
+            tv_country = itemView.findViewById(R.id.tv_country_list);
             img_list = itemView.findViewById(R.id.img_list);
         }
     }

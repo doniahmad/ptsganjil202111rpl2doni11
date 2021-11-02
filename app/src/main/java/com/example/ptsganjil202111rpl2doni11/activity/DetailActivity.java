@@ -3,8 +3,6 @@ package com.example.ptsganjil202111rpl2doni11.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.ClipData;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -74,11 +72,17 @@ public class DetailActivity extends AppCompatActivity implements Toolbar.OnMenuI
                     .into(img_stadiumImg);
         }
         topappbar.setOnMenuItemClickListener(this);
+        topappbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.top_app_bar, menu);
+        getMenuInflater().inflate(R.menu.fav_app_bar, menu);
         onFavorite(menu);
         return true;
     }
